@@ -26,7 +26,7 @@ This documentation willl help user to Install the application in user windows ma
   ## Step 1
    - Open PowerShell in the windows machine run Docker command
    - Create a Private network for Docker with name COVID19DashboardbNetwork
-   - docker create network COVID19DashboardbNetwork
+   - docker network create COVID19DashboardbNetwork
    
   ## Step 2
   - Run below command to download the InfluxDB Docker Image from DockerHub and run as a container
@@ -35,7 +35,7 @@ This documentation willl help user to Install the application in user windows ma
   ## Step 3
 
   - Run below commnd to download the Python Script image from DockerHub and run as a container
-    - docker run -d -p 3000:3000 --network COVID19DashboardbNetwork --name=pythonimage sunishsurendrank/pythonimage:v1
+    - docker run -d --network COVID19DashboardbNetwork --name=pythonimage sunishsurendrank/pythonimage:v1
 
   ## Step 4
   - Run below commnd to download the Grafana Docker Image from DockerHub and run as a container
