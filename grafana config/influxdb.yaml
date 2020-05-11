@@ -4,4 +4,4 @@ datasources:
   - name: InfluxDB
     type: influxdb
     database: COVID19Report
-    url: http://localhost:8086
+    url: http://influxdb:8086
