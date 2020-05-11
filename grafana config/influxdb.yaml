@@ -5,3 +5,4 @@ datasources:
     type: influxdb
     database: COVID19Report
     url: http://influxdb:8086
+    access: proxy
